@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import { SearchBar } from '../SearchBar/SearchBar';
-import { SearchResults } from '../SearchResults/SearchResults';
-import { Playlist } from '../Playlist/Playlist';
+import  SearchBar from '../SearchBar/SearchBar';
+import  SearchResults from '../SearchResults/SearchResults';
+import  Playlist from '../Playlist/Playlist';
 
 class App extends React.Component {
   constructor(props){
@@ -40,9 +40,7 @@ class App extends React.Component {
     //Use the track's id property to check if the current song is in the playlistTracks state.
 
     //If the id is new, add the song to the end of the playlist.
-    this.setState({
 
-    })
     //Set the new state of the playlist
   }
   render() {
