@@ -1,6 +1,5 @@
 import React from 'react';
-
-export class Track extends React.Component {
+class Track extends React.Component {
   renderAction() {
 //    if(isRemoval){
   //    return '<a className="Track-action">-</a>';
@@ -21,3 +20,5 @@ export class Track extends React.Component {
     )
   }
 }
+
+export default Track;
