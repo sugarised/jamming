@@ -1,0 +1,122 @@
+.player {
+  font-family: Poppins,sans-serif;
+  color: white;
+  background: rgba(1,12,63,.7);
+  box-shadow: 0 4px 2px 2px #000;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3.33rem;
+}
+
+.player__artwork {
+  background: grey;
+  height: 200px;
+  width: 30%;
+  z-index: 2;
+}
+
+.player__main {
+  height: 200px;
+  width: 70%;
+  padding: 10px;
+}
+
+.player__info,
+.player__buttons {
+  position: relative;
+  z-index: 2;
+}
+
+.player__controls {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.player__buttons {
+  float: left;
+}
+
+.player__info {
+  display: flex;
+  flex-direction: column;
+  margin-top:10px;
+  padding-left: 10px;
+}
+.player__title {
+  margin: 5px;
+  font-weight: bold;
+}
+.player__text {
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+.player__progress {
+   width: 60%;
+    height: 20px;
+    margin-right: 10px;
+    margin-top:30px;
+    float: right;
+    border-radius: 15px;
+    background: rgba(0,0,0,.3);
+}
+
+.player__point {
+      width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: #6c41ec;
+}
+
+.player__play,
+.player__pause {
+  border: none;
+  outline:none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: .77rem;
+  border-radius: 54px;
+  margin-top: 1.27rem;
+  background-color: #6c41ec;
+  text-align: center;
+  font-size: .83rem;
+  -webkit-transition: background-color .25s;
+  -o-transition: background-color .25s;
+  transition: background-color .25s;
+}
+
+.player__play:hover,
+.player__pause:hover {
+  background-color: rgba(108,65,233,.7);
+}
+
+.player__play {
+  margin-right: 10px;
+}
+
+.play-icon {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.pause-icon {
+  display: block;
+  float: left;
+  width: 6px;
+  height: 20px;
+  background: #ffffff;
+  margin-right: 6px;
+}
+
+.pause-icon--2 {
+  margin-right: 0;
+}
