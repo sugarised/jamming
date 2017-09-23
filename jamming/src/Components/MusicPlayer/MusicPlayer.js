@@ -5,33 +5,11 @@ class MusicPlayer extends React.Component {
   constructor(props) {
     super(props);
   }
-
   render(){
-
     return (
 
-      <div className="player">
-         <audio id="player" src={this.props.onSend.trackUri}>
-         </audio>
-           <img className="player__artwork" src={this.props.onSend.albumArt} />
-           <div className="player__main">
-             <div className="player__info">
-               <p className="player__title">Artist: <span className="player__text">{this.props.onSend.trackArtist}</span></p>
-               <p className="player__title">Track:<span className="player__text">{this.props.onSend.trackName}</span></p>
-               <p className="player__title">Album:<span className="player__text">{this.props.onSend.albumName}</span></p>
-               </div>
-               <div className="player__controls">
-                 <div id="progress" className="player__progress">
-                   <div id="progress-point" className="player__point"></div>
-                 </div>
-                 <div className="player__buttons">
-                   <button className="player__play" id="play">
-                   <span className="play-icon"></span></button>
-                   <button id="pause" className="player__pause"><span className="pause-icon"></span><span className="pause-icon pause-icon--2"></span></button>
-                 </div>
-               </div>
-           </div>
-         </div>
+        <audio id="player" src={this.props.onSend.preview} controls>
+        </audio>
 
 
     )
@@ -39,6 +17,29 @@ class MusicPlayer extends React.Component {
 }
 
 export default MusicPlayer;
+
+// <div className="player">
+//    <audio id="player" src={this.props.onSend.trackUri}>
+//    </audio>
+//      <img className="player__artwork" src={this.props.onSend.albumArt} />
+//      <div className="player__main">
+//        <div className="player__info">
+//          <p className="player__title">Artist: <span className="player__text">{this.props.onSend.trackArtist}</span></p>
+//          <p className="player__title">Track:<span className="player__text">{this.props.onSend.trackName}</span></p>
+//          <p className="player__title">Album:<span className="player__text">{this.props.onSend.albumName}</span></p>
+//          </div>
+//          <div className="player__controls">
+//            <div id="progress" className="player__progress">
+//              <div id="progress-point" className="player__point"></div>
+//            </div>
+//            <div className="player__buttons">
+//              <button className="player__play" id="play">
+//              <span className="play-icon"></span></button>
+//              <button id="pause" className="player__pause"><span className="pause-icon"></span><span className="pause-icon pause-icon--2"></span></button>
+//            </div>
+//          </div>
+//      </div>
+//    </div>
 
 //convert to React to make player work.
 //  let player= document.getElementById('player');
